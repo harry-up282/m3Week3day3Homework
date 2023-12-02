@@ -1,0 +1,74 @@
+// Import colors and fonts
+@import 'colors';
+@import 'fonts';
+@import 'nav';
+
+/* Nest Main */
+body {
+	border-left: 15px solid #daaa0e;
+	border-right: 15px solid #daaa0e;
+}
+header {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: $background-color_1;
+	height: 80px;
+}
+nav {
+	ul {
+		list-style-type: none;
+		margin-left: 30px;
+		padding-top: 20px;
+		li {
+			display: inline;
+			margin-right: 10px;
+			a {
+				text-decoration: none;
+				font-family: $font-family_1;
+				color: $color_1;
+			}
+		}
+	}
+}
+main {
+	width: 1350px;
+	min-height: 535px;
+	margin: auto;
+	display: flex;
+	#intro-text {
+		padding: 60px;
+		background-color: $background-color_2;
+		text-align: center;
+		span {
+			color: $color_2;
+			font-family: $font-family_2;
+			font-size: 2rem;
+		}
+		h3 {
+			color: $color_2;
+			font-family: $font-family_1;
+		}
+		p {
+			color: $color_2;
+			font-family: $font-family_1;
+		}
+	}
+	#intro-image {
+		img {
+			width: 100%;
+		}
+	}
+	button.submit-buttton {
+		background-color: $background-color_1;
+		border: none;
+		padding: 10px 10px;
+		font-size: 1em;
+		color: $color_1;
+	}
+}
+footer {
+	background-color: $background-color_1;
+	height: 80px;
+	line-height: 100px;
+	margin-top: 20px;
+}
